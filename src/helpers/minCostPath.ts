@@ -1,5 +1,11 @@
 export function minCostPath(grid: number[][]): number {
-  if (!grid || grid.length === 0 || grid[0].length === 0) return 0;
+  if (
+    !grid ||
+    grid.length === 0 ||
+    grid[0].length === 0 ||
+    grid.length !== grid[0].length
+  )
+    return 0;
 
   const rows = grid.length;
   const cols = grid[0].length;

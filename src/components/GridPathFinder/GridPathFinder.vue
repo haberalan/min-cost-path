@@ -44,7 +44,11 @@
 
     const parsedData = JSON.parse(grid);
 
-    if (Array.isArray(parsedData) && Array.isArray(parsedData[0]))
+    if (
+      Array.isArray(parsedData) &&
+      Array.isArray(parsedData[0]) &&
+      parsedData[0].length === parsedData.length
+    )
       gridData.value = parsedData;
   };
 
