@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<template>
+  <grid-path-finder />
+</template>
 
-<template></template>
+<script setup lang="ts">
+  import GridPathFinder from "./components/GridPathFinder/GridPathFinder.vue";
+</script>
 
 <style scoped></style>
